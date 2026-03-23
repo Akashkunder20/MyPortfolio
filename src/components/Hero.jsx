@@ -119,6 +119,7 @@ function Hero() {
       <img
         src={profileImg}
         alt="Akash"
+        loading="lazy"
         className="w-32 h-32 object-cover rounded-full border-4 border-white/30 shadow-lg mb-4 transition duration-300 hover:scale-110"
       />
 
