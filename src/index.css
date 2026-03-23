@@ -1,0 +1,88 @@
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/geist";
+
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;       /* allow scrolling */
+  background: radial-gradient(circle at top, #0a0a0a, #000);
+  color: white;
+  overflow-x: hidden;     /* prevent sideways scroll */
+  scroll-behavior: auto;  /* let Lenis handle smoothness */
+}
+
+/* ⭐ Random Falling Stars */
+.star {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: white;
+  opacity: 0.8;
+  border-radius: 50%;
+  animation: fall linear infinite;
+}
+
+/* Smaller stars + slower fall on mobile */
+@media (max-width: 768px) {
+  .star {
+    width: 2px;
+    height: 2px;
+    opacity: 0.6;
+    animation-duration: 6s; /* smoother feel */
+  }
+}
+
+@keyframes fall {
+  from { transform: translateY(0); }
+  to { transform: translateY(100vh); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* On mobile, reduce float distance */
+@media (max-width: 768px) {
+  .animate-float {
+    animation: float 8s ease-in-out infinite;
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+}
+@keyframes particle {
+  0% { transform: translateY(0); opacity: 0.5; }
+  50% { transform: translateY(-20px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 0.5; }
+}
+
+.animate-particle {
+  animation: particle linear infinite;
+}
+/* 🔥 Animated Border */
+.animate-border {
+  background-size: 300% 300%;
+  animation: borderMove 6s linear infinite;
+}
+
+@keyframes borderMove {
+  0% { background-position: 0% }
+  100% { background-position: 300% }
+}
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
+}
