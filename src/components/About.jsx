@@ -4,7 +4,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import cricketImg from "../assets/cricket.png";
 import techImg from "../assets/techimg.png";
 //import stockImg from "../assets/stock.jpg";
-import akImg from "../assets/AKASH1.JPG"
+import akImg from "../assets/AKASH1.JPG";
+import travelImg from "../assets/Travel.jpeg";
 import { HiArrowRight } from "react-icons/hi";
 
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
@@ -13,7 +14,7 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const heroCards = [
   { id: 1, img: akImg, tag: "I CODE", role: "ENGINEER" },
-  { id: 2, img: cricketImg, tag: "I TRAVEL", role: "TRAVELER" },
+  { id: 2, img: travelImg, tag: "I TRAVEL", role: "TRAVELER" },
   { id: 3, img: cricketImg, tag: "I PLAY", role: "ATHLETE" },
   { id: 4, img: techImg, tag: "I EXPLORE", role: "EXPLORER" },
 ];
