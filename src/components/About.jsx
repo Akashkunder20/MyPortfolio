@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import cricketImg from "../assets/cricket.png";
 import techImg from "../assets/techimg.png";
 //import stockImg from "../assets/stock.jpg";
-import akImg from "../assets/AKASH1.jpg"
+import akImg from "../assets/AKASH1.JPG"
 import { HiArrowRight } from "react-icons/hi";
 
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
