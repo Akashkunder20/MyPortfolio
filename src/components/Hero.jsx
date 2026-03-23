@@ -43,7 +43,7 @@ function Hero() {
         
         {/* LEFT SIDE */}
         <div className="text-center md:text-left">
-          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 tracking-widest bg-clip-text text-transparent bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 animate-text-shimmer">
+          <h1 className="text-5xl md:text-7xl font-extrabold mb-6 tracking-widest bg-clip-text text-transparent bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 animate-text-shimmer">
             Hi, I'm Akash
           </h1>
 
