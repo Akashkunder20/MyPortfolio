@@ -55,7 +55,7 @@ function Contact() {
 
           {/* 💬 WhatsApp Quick Chat */}
           <a
-            href="https://wa.me/918197662028"
+            href="https://wa.me/918197662038"
             target="_blank"
             rel="noopener noreferrer"
             className="block text-center bg-green-500 hover:bg-green-600 
