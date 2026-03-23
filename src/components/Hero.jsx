@@ -5,7 +5,7 @@ function Hero() {
   return (
     <section
       id="home"
-      className="relative h-screen bg-linear-to-br from-gray-900 via-black to-gray-800 text-white flex items-center px-4 overflow-hidden"
+      className="relative h-screen bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white flex items-center px-4 overflow-hidden"
     >
       
       {/* Shooting Stars */}
@@ -74,7 +74,7 @@ function Hero() {
        {/* RIGHT SIDE (ADVANCED PROFILE CARD) */}
 <div className="flex justify-center">
   <div
-  className="relative w-[280px] h-[360px] rounded-3xl overflow-hidden shadow-2xl border border-white/20 bg-linear-to-br from-white/10 to-white/5 backdrop-blur-lg transition-transform duration-200 ease-out will-change-transform"
+  className="relative w-[280px] h-[360px] rounded-3xl overflow-hidden shadow-2xl border border-white/20 bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-lg transition-transform duration-200 ease-out will-change-transform"
   onMouseMove={(e) => {
     const card = e.currentTarget;
     const rect = card.getBoundingClientRect();
@@ -107,12 +107,12 @@ function Hero() {
 >
 
     {/* 🔥 Animated Gradient Border */}
-    <div className="absolute inset-0 rounded-3xl p-[2px] bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 animate-border">
+    <div className="absolute inset-0 rounded-3xl p-[2px] bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-border">
       <div className="w-full h-full rounded-3xl bg-black/80 backdrop-blur-lg"></div>
     </div>
 
     {/* Glow */}
-    <div className="absolute inset-0 bg-linear-to-br from-blue-500/20 via-purple-500/20 to-pink-500/20 blur-2xl opacity-60"></div>
+    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 via-purple-500/20 to-pink-500/20 blur-2xl opacity-60"></div>
 
     {/* Content */}
     <div className="relative z-10 flex flex-col items-center justify-center h-full p-6">
