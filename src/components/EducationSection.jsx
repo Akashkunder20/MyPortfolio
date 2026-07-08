@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Education from "./Education";
 import Experience from "./Experience";
+import Certifications from "./Certifications";
 
 function EducationSection() {
   const [activeTab, setActiveTab] = useState("education");
@@ -45,11 +46,26 @@ function EducationSection() {
             💼 EXPERIENCE
           </button>
 
+          {/* CERTIFICATIONS */}
+          <button
+            onClick={() => setActiveTab("certifications")}
+            className={`px-6 py-2 rounded-full text-sm transition-all duration-300
+              ${
+                activeTab === "certifications"
+                  ? "bg-white/10 text-white shadow-inner"
+                  : "text-gray-400 hover:text-white"
+              }`}
+          >
+            🎓 CERTIFICATIONS
+          </button>
+
         </div>
       </div>
 
       {/* Content */}
-      {activeTab === "education" ? <Education /> : <Experience />}
+      {activeTab === "education" && <Education />}
+      {activeTab === "experience" && <Experience />}
+      {activeTab === "certifications" && <Certifications />}
     </section>
   );
 }
