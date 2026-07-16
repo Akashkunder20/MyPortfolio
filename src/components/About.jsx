@@ -204,7 +204,7 @@ card.style.transition = "transform 0.2s ease"; // smooth tilt
             { label: "GITHUB", icon: <FaGithub />, url: "https://github.com/Akashkunder20", border: "border-gray-500/30" },
             { label: "LINKEDIN", icon: <FaLinkedin />, url: "https://www.linkedin.com/in/akash-kunder-b99289311/", border: "border-blue-500/30" },
             { label: "INSTAGRAM", icon: <FaInstagram />, url: "https://www.instagram.com/_.aksh_kunder._?igsh=MXN2ZjlweWtiOXEzcw==", border: "border-pink-500/30" },
-           { label: "RESUME", icon: <HiArrowRight />, url: "/Akash_Resume.pdf", border: "border-purple-500/30" }
+           { label: "RESUME", icon: <HiArrowRight />, url: "/Akash08_Resume_2026.pdf", border: "border-purple-500/30" }
 
           ].map((item, i) => (
             <a
