@@ -2,56 +2,103 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <link rel="icon" type="image/jpg" href="/Akash.jpg" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- ✅ SEO -->
     <title>Akash Kunder | Full Stack Developer Portfolio</title>
-
     <meta
       name="description"
       content="Akash Kunder portfolio showcasing MERN stack projects, React applications, Node.js backend development, MongoDB, and responsive web design."
     />
-
     <meta
       name="keywords"
       content="Akash Kunder, Full Stack Developer, MERN Stack Developer, React Developer, Node.js Developer, Portfolio"
     />
-
     <meta name="author" content="Akash Kunder" />
-
     <meta name="robots" content="index, follow" />
 
     <!-- ✅ Open Graph -->
     <meta property="og:title" content="Akash Kunder | Portfolio" />
-
     <meta
       property="og:description"
       content="Explore Akash Kunder's portfolio featuring MERN stack, React, Node.js, and modern web development projects."
     />
-
-    <meta
-      property="og:image"
-      content="https://akashkunder.vercel.app/Akash.jpg"
-    />
-
-    <meta
-      property="og:url"
-      content="https://akashkunder.vercel.app/"
-    />
-
+    <meta property="og:image" content="https://akashkunder.vercel.app/Akash.jpg" />
+    <meta property="og:url" content="https://akashkunder.vercel.app/" />
     <meta property="og:type" content="website" />
 
     <!-- ✅ Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <style>
+      #pf-splash {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0b0f19;
+        transition: opacity 0.5s ease, visibility 0.5s ease;
+      }
+      #pf-splash.pf-splash-hidden {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+      .pf-splash-logo {
+        font-family: system-ui, sans-serif;
+        font-size: 2.5rem;
+        font-weight: 800;
+        letter-spacing: 0.05em;
+        background: linear-gradient(90deg, #60a5fa, #a78bfa, #f472b6);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        animation: pf-shimmer 1.6s linear infinite, pf-pulse 1.6s ease-in-out infinite;
+      }
+      @keyframes pf-shimmer {
+        to { background-position: 200% center; }
+      }
+      @keyframes pf-pulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.08); }
+      }
+      .pf-splash-ring {
+        position: absolute;
+        width: 90px;
+        height: 90px;
+        border: 3px solid transparent;
+        border-top-color: #60a5fa;
+        border-right-color: #a78bfa;
+        border-radius: 50%;
+        animation: pf-spin 1s linear infinite;
+      }
+      @keyframes pf-spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
   </head>
 
   <body>
+    <div id="pf-splash">
+      <div class="pf-splash-ring"></div>
+      <div class="pf-splash-logo">AK</div>
+    </div>
+
     <div id="root"></div>
 
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      window.addEventListener("load", () => {
+        const splash = document.getElementById("pf-splash");
+        setTimeout(() => {
+          splash.classList.add("pf-splash-hidden");
+          setTimeout(() => splash.remove(), 600);
+        }, 400);
+      });
+    </script>
   </body>
 </html>
