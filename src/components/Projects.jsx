@@ -29,7 +29,7 @@ function Projects() {
       desc: "Stock Close Price Prediction.",
       img: stockImg2,
       github: "https://github.com/Akashkunder20/Research-Paper-Msc",
-      //live: "https://your-live-link.com/stock",
+      live: "https://stockapp2026.onrender.com",
     },
   ];
 
