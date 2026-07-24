@@ -76,14 +76,14 @@ function Projects() {
               >
                 <SiGithub /> GitHub
               </a>
-              {/* <a
+              <a
                 href={project.live}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 text-pink-400 hover:text-pink-200 transition"
               >
                 <BiLinkExternal /> Live
-              </a> */}
+              </a>
             </div>
           </div>
         ))}
