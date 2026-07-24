@@ -138,22 +138,21 @@ function InternshipCard() {
 
             <div className="flex flex-wrap gap-4">
               {technologies.map((tech, idx) => (
-                <div
-                  key={idx}
-                  className="group flex items-center gap-2 px-4 py-2 
-                  bg-linear-to-r from-gray-800 to-gray-700 
-                  border border-gray-600 rounded-full 
-                  text-sm text-gray-200
-                  animate-[float_3s_ease-in-out_infinite]
-                  transition-all duration-300
-                  hover:scale-110 hover:border-blue-400 
-                  hover:shadow-[0_0_15px_#3b82f6]"
-                >
-                  <span className="text-lg group-hover:rotate-12 transition">
-                    {tech.icon}
-                  </span>
-                  {tech.name}
-                </div>
+               <div
+  key={idx}
+  className="group flex items-center gap-2 px-4 py-2 
+  bg-linear-to-r from-gray-800 to-gray-700 
+  border border-gray-600 rounded-full 
+  text-sm text-gray-200
+  transition-all duration-300
+  hover:scale-110 hover:border-blue-400 
+  hover:shadow-[0_0_15px_#3b82f6]"
+>
+  <span className="text-lg group-hover:rotate-12 transition">
+    {tech.icon}
+  </span>
+  {tech.name}
+</div>
               ))}
             </div>
           </div>

@@ -1,13 +1,17 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import Lenis from "@studio-freight/lenis";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home";
+import Loader from "./components/Loader";
 
 function App() {
+  const [loading, setLoading] = useState(true);
+  const [fading, setFading] = useState(false);
+
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.2, // scroll speed (higher = slower, smoother)
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // easing curve
+      duration: 1.2,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smoothWheel: true,
       smoothTouch: true,
     });
@@ -24,8 +28,26 @@ function App() {
     };
   }, []);
 
+  useEffect(() => {
+    const fadeTimer = setTimeout(() => setFading(true), 1500);
+    const removeTimer = setTimeout(() => setLoading(false), 2000);
+    return () => {
+      clearTimeout(fadeTimer);
+      clearTimeout(removeTimer);
+    };
+  }, []);
+
   return (
     <>
+      {loading && (
+        <div
+          className={`fixed inset-0 z-[9999] flex items-center justify-center bg-gray-950 transition-opacity duration-500 ${
+            fading ? "opacity-0 pointer-events-none" : "opacity-100"
+          }`}
+        >
+          <Loader />
+        </div>
+      )}
       <NavBar />
       <Home />
     </>
