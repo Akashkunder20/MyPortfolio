@@ -22,11 +22,13 @@ function Certifications() {
       duration: "4 Week Course",
     },
     {
-      title: "College Certificate",
-      desc: "Certificate of completion for the college course.",
+      title: "IoT, Personality Development & MongoDB",
+      desc: "Workshops on Hardware Implementation for IoT, Personality Development, and Node.js & MongoDB Essentials.",
       img: collegeImg,
       pdf: "/Course_Workshop_Mgm.pdf",
-    }
+      duration: "AY 2024-25 & 2025-26",
+      issuer: "MGM College, Udupi",
+    },
 
   ];
 
