@@ -3,6 +3,7 @@ import { FaFilePdf, FaCheckCircle } from "react-icons/fa";
 
 import dataMiningImg from "../assets/data_mining.png";
 import webTechImg from "../assets/web_tech.png";
+import collegeImg from "../assets/college_certificate.png";
 
 function Certifications() {
   const certifications = [
@@ -20,6 +21,13 @@ function Certifications() {
       pdf: "/Web_Technology.pdf",
       duration: "4 Week Course",
     },
+    {
+      title: "College Certificate",
+      desc: "Certificate of completion for the college course.",
+      img: collegeImg,
+      pdf: "/Course_Workshop_Mgm.pdf",
+    }
+
   ];
 
   return (
