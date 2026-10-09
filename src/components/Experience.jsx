@@ -36,7 +36,7 @@ const experiences = [
     // ───────── COMPLETED INTERNSHIP ─────────
     title: "Software Engineer Intern",
     company: "MPI Manipal",
-    period: "March 2026 – September  2026", // TODO: internship end month
+    period: "March 2026 – September 2026", // TODO: internship end month
     location: "Udupi, India",
     badge: "Completed",
     badgeClass: "text-blue-400 border-blue-400/40 bg-blue-400/10",
