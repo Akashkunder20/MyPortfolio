@@ -73,7 +73,7 @@ export default function Hero() {
   return (
     <section
       id="about"
-      className="min-h-screen text-white relative overflow-hidden px-6 from-gray-900 via-black to-gray-800"
+      className="min-h-screen text-white relative overflow-hidden px-6 bg-linear-to-br from-gray-900 via-black to-gray-800"
     >
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center min-h-screen">
         {/* LEFT: Info */}
@@ -83,7 +83,7 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <div className="flex flex-wrap gap-3 mt-4 mb-4">
-            {["FULL STACK", "MSC - 2026", "OPEN TO WORK"].map((item) => (
+            {["FULL STACK", "MSC GRADUATE", "TRAINEE · QUALITY & PROCESS"].map((item) => (
               <span
                 key={item}
                 className="px-4 py-2 text-xs border border-cyan-400/30 rounded-full bg-cyan-400/5 text-cyan-300"
@@ -96,7 +96,7 @@ export default function Hero() {
           <div className="space-y-6 mt-6 max-w-2xl">
             {[
               "I'm a full-stack developer with a deep love for building things that feel alive — interfaces that breathe, APIs that sing, and systems that scale.",
-              "Currently pursuing MSc Computer Science at Mahatma Gandhi Memorial College Udupi. I work with React, Postman API, MongoDB, and dive into AI pipelines whenever I get the chance.",
+              "I completed my MSc in Computer Science at Mahatma Gandhi Memorial College, Udupi, and now work as a Trainee in the Quality and Process department at MPI Manipal, where I interned. I work with React, Postman API, MongoDB, and dive into AI pipelines whenever I get the chance.",
               "I enjoy turning complex problems into simple, intuitive solutions, focusing on performance, scalability, and seamless user experience.",
               "Beyond coding, I constantly explore new technologies, experiment with creative ideas, and push myself to build products that are both meaningful and impactful.",
               "I believe in learning by building — every project I create is a step toward mastering my craft and delivering real-world value.",
@@ -172,7 +172,7 @@ export default function Hero() {
               { label: "STATUS", value: "ONLINE", color: "text-green-400" },
               { label: "TIME", value: time, color: "text-cyan-300" },
               { label: "LOCATION", value: "Udupi, IN – KA", color: "text-purple-300" },
-              { label: "AVAILABILITY", value: "OPEN TO WORK", color: "text-yellow-400" },
+              { label: "CURRENT ROLE", value: "Trainee, Quality & Process @ MPI Manipal", color: "text-yellow-400" },
             ].map((item, i) => (
               <div
                 key={i}

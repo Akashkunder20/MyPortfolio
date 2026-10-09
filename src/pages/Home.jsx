@@ -67,7 +67,7 @@ function Home() {
     className="absolute inset-0 flex items-center justify-center 
                text-[5rem] font-bold tracking-widest 
                text-transparent bg-clip-text 
-               bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 
+               bg-linear-to-r from-purple-500 via-pink-500 to-yellow-500 
                opacity-20 select-none"
     style={{ zIndex: 0 }}
   >

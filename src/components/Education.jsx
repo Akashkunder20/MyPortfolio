@@ -3,9 +3,9 @@ import React from "react";
 function Education() {
   const data = [
     {
-      title: "MSc in Computer Science",
-      subtitle: "Currently Pursuing",
-      year: "2024 - Present",
+      title: "MSc in Computer Science - MGM College, Udupi",
+      subtitle: "CGPA: 8.55",
+      year: "2024 - 2026",
     },
     {
       title: "BCA - MGM College, Udupi",
