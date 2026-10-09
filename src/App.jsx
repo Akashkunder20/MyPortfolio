@@ -41,7 +41,7 @@ function App() {
     <>
       {loading && (
         <div
-          className={`fixed inset-0 z-[9999] flex items-center justify-center bg-gray-950 transition-opacity duration-500 ${
+          className={`fixed inset-0 z-9999 flex items-center justify-center bg-gray-950 transition-opacity duration-500 ${
             fading ? "opacity-0 pointer-events-none" : "opacity-100"
           }`}
         >

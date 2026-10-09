@@ -1,10 +1,7 @@
+@import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 @import "@fontsource-variable/geist";
-
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities; */
 
 html, body {
   margin: 0;
@@ -28,40 +25,27 @@ html, body {
   animation: fall linear infinite;
 }
 
-/* Smaller stars + slower fall on mobile */
-@media (max-width: 768px) {
-  .star {
-    width: 2px;
-    height: 2px;
-    opacity: 0.6;
-    animation-duration: 6s; /* smoother feel */
-  }
-}
-
 @keyframes fall {
   from { transform: translateY(0); }
   to { transform: translateY(100vh); }
 }
 
+/* Floating animation */
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-20px); }
+}
+
+@keyframes float-mobile {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
 }
 
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
 
-/* On mobile, reduce float distance */
-@media (max-width: 768px) {
-  .animate-float {
-    animation: float 8s ease-in-out infinite;
-  }
-  @keyframes float {
-    0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-10px); }
-  }
-}
+/* Particles */
 @keyframes particle {
   0% { transform: translateY(0); opacity: 0.5; }
   50% { transform: translateY(-20px); opacity: 1; }
@@ -71,6 +55,7 @@ html, body {
 .animate-particle {
   animation: particle linear infinite;
 }
+
 /* 🔥 Animated Border */
 .animate-border {
   background-size: 300% 300%;
@@ -78,11 +63,20 @@ html, body {
 }
 
 @keyframes borderMove {
-  0% { background-position: 0% }
-  100% { background-position: 300% }
+  0% { background-position: 0%; }
+  100% { background-position: 300%; }
 }
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-6px); }
-  100% { transform: translateY(0px); }
+
+/* 📱 Mobile tweaks */
+@media (max-width: 768px) {
+  .star {
+    width: 2px;
+    height: 2px;
+    opacity: 0.6;
+    animation-duration: 6s; /* smoother feel */
+  }
+
+  .animate-float {
+    animation: float-mobile 8s ease-in-out infinite;
+  }
 }

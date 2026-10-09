@@ -7,10 +7,10 @@ function EducationSection() {
   const [activeTab, setActiveTab] = useState("education");
 
   return (
-    <section
-      id="education"
-      className="bg-gradient-to-b from-gray-900 via-black to-gray-900 text-white py-20 px-6 md:px-20 scroll-mt-20"
-    >
+   <section
+  id="education"
+  className="bg-linear-to-b from-gray-900 via-black to-gray-900 text-white py-20 px-6 md:px-20"
+>
       {/* Title */}
       <h2 className="text-4xl font-bold text-center mb-12">
         <span className="text-blue-400">My Journey</span>

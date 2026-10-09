@@ -37,7 +37,7 @@ function Certifications() {
       {certifications.map((cert, index) => (
         <div
           key={index}
-          className="group relative rounded-2xl p-[1.5px] bg-gradient-to-br from-blue-500/40 via-purple-500/30 to-transparent hover:from-blue-400 hover:via-purple-400 hover:to-pink-400 transition-all duration-500"
+          className="group relative rounded-2xl p-[1.5px] bg-linear-to-br from-blue-500/40 via-purple-500/30 to-transparent hover:from-blue-400 hover:via-purple-400 hover:to-pink-400 transition-all duration-500"
         >
           <div className="relative bg-[#0d1424] backdrop-blur-lg rounded-2xl shadow-lg group-hover:scale-[1.03] transition-transform duration-300 p-6 flex flex-col h-full overflow-hidden">
             {/* Verified badge */}
@@ -78,7 +78,7 @@ function Certifications() {
               href={cert.pdf}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 mt-auto bg-gradient-to-r from-blue-500/20 to-purple-500/20 hover:from-blue-500 hover:to-purple-500 border border-blue-400/30 hover:border-transparent text-blue-300 hover:text-white text-sm font-medium px-5 py-2.5 rounded-xl transition-all duration-300"
+              className="inline-flex items-center justify-center gap-2 mt-auto bg-linear-to-r from-blue-500/20 to-purple-500/20 hover:from-blue-500 hover:to-purple-500 border border-blue-400/30 hover:border-transparent text-blue-300 hover:text-white text-sm font-medium px-5 py-2.5 rounded-xl transition-all duration-300"
             >
               <FaFilePdf /> View Certificate
             </a>

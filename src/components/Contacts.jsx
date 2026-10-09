@@ -15,7 +15,7 @@ function Contact() {
       className="relative bg-black text-white py-20 px-6 md:px-20 scroll-mt-20 overflow-hidden"
     >
       {/* 🌌 Background Glow */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-black to-blue-900/20 blur-2xl"></div>
+      <div className="absolute inset-0 bg-linear-to-br from-purple-900/20 via-black to-blue-900/20 blur-2xl"></div>
 
       <h2 className="text-4xl font-bold text-center mb-12 text-purple-300 relative">
         Contact Me
@@ -100,7 +100,7 @@ function Contact() {
           </div>
 
           {/* 🚀 CTA CARD */}
-          <div className="text-center bg-gradient-to-r from-purple-600 to-blue-600 
+          <div className="text-center bg-linear-to-r from-purple-600 to-blue-600 
           p-6 rounded-2xl shadow-lg hover:scale-105 transition">
             <h3 className="text-xl font-bold mb-2">
               Let’s Build Something Amazing

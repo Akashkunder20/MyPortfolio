@@ -92,7 +92,7 @@ function Skills() {
 
       {/* 🔥 Title */}
       <h2 className="text-5xl font-extrabold text-center mb-20 
-                     bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 
+                     bg-linear-to-r from-blue-400 via-purple-400 to-pink-400 
                      text-transparent bg-clip-text tracking-wider">
         My Skills
       </h2>
@@ -109,7 +109,7 @@ function Skills() {
                        transition duration-300 shadow-lg"
           >
             {/* Glow effect */}
-            <div className="absolute inset-0 rounded-2xl bg-gradient-to-r 
+            <div className="absolute inset-0 rounded-2xl bg-linear-to-r 
                             from-blue-500/10 to-purple-500/10 opacity-0 
                             group-hover:opacity-100 transition"></div>
 
@@ -130,7 +130,7 @@ function Skills() {
 
       {/* 🔥 Title */}
       <h2 className="text-4xl md:text-5xl font-extrabold text-center mb-20 
-                     bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 
+                     bg-linear-to-r from-cyan-400 via-purple-500 to-pink-500 
                      text-transparent bg-clip-text tracking-wider">
         Skill Analysis
       </h2>
@@ -164,7 +164,7 @@ function Skills() {
                            hover:border-cyan-400/40 group"
               >
                 {/* Neon Glow */}
-                <div className="absolute inset-0 rounded-2xl bg-gradient-to-r 
+                <div className="absolute inset-0 rounded-2xl bg-linear-to-r 
                                 from-cyan-500/10 to-purple-500/10 opacity-0 
                                 group-hover:opacity-100 transition"></div>
 

@@ -26,7 +26,7 @@ function Navbar() {
   }, []);
 
   return (
-    <div className="fixed top-2 md:top-6 left-1/2 transform -translate-x-1/2 z-50 w-full px-2">
+  <div className="fixed top-2 md:top-6 inset-x-0 z-50 px-2 flex justify-center">
       <nav className="backdrop-blur-md bg-white/10 border border-white/20 rounded-full px-4 py-2 md:px-8 md:py-3 shadow-lg max-w-md mx-auto">
         <ul className="flex flex-wrap justify-center items-center gap-3 sm:gap-4 md:gap-8 text-xs sm:text-sm md:text-base text-gray-200">
           {["home", "about", "skills", "projects", "contact"].map((id) => (
@@ -42,7 +42,7 @@ function Navbar() {
               >
                 {id.charAt(0).toUpperCase() + id.slice(1)}
                 {activeSection === id && (
-                  <span className="absolute left-0 -bottom-1 w-full h-[2px] bg-blue-400"></span>
+                 <span className="absolute left-0 -bottom-1 w-full h-0.5 bg-blue-400"></span>
                 )}
               </a>
             </li>
